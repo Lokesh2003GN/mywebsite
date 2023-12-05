@@ -1,0 +1,37 @@
+.page{
+    background-color: cadetblue;
+    position: relative;
+}
+.title{
+    text-align: center;
+}
+.continer{
+position: relative;
+display: flex;
+justify-content: center;
+
+}
+.items{
+    background-color: aliceblue;
+    margin: 5vh;
+    position: relative;
+    height: 30vh;
+    width: 30vh;
+    align-items: center;
+    text-align: center;
+}
+.img-items{
+   width: 100%;
+   height: auto;
+   overflow: hidden; 
+}
+.img-items img{
+   width: 24vh;
+   height: 22vh;
+   display: block;
+   position: relative;
+   left: -2.5vh;
+}
+a{
+    text-decoration: none;
+}

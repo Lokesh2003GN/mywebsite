@@ -23,5 +23,5 @@ urlpatterns = [
     path('',include('maths.urls')),
     path('',include('games.urls')),
     path('',include('ECE.urls')),
-    
+    path('',include('home.urls')),
 ]

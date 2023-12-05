@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'maths',
     'games',
     'ECE',
+    'home',
 ]
 
 MIDDLEWARE = [

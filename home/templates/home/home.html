@@ -1,0 +1,67 @@
+{% extends 'encryption/layouts/main.html' %}
+{% block title %}
+home
+{% endblock title %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'home.css' %}">
+<div class="page">
+<div class="title">
+    <h1>Applications</h1>
+</div>
+<div class="continer">
+    <a href="encryption">
+        <div class="items">
+            <dir class="img-items"><img src="{% static 'encryption.jpg' %}" alt=""></dir>
+            <h4>Encryption</h4>
+        </div>
+    </a>
+    <a href="calculator">
+        <div class="items">
+            <dir class="img-items"><img src="{% static 'calculator.webp' %}" alt=""></dir>
+            <h4>Calculator</h4>
+        </div>
+    </a>
+    <a href="tables">
+        <div class="items">
+            <dir class="img-items"><img src="{% static 'tables.jpg' %}" alt=""></dir>
+            <h4>Tables</h4>
+        </div>
+    </a>
+    <a href="resistor">
+        <div class="items">
+            <dir class="img-items"><img src="{% static 'resistor-logo.webp' %}" alt=""></dir>
+            <h4>Resistor color code</h4>
+        </div>
+    </a>
+    
+</div>
+<div class="continer">
+    <a href="numbers">
+        <div class="items">
+            <dir class="img-items"><img src="{% static 'numbers.jpg' %}" alt=""></dir>
+            <h4>Numbers</h4>
+        </div>
+    </a>
+    <a href="factorial">
+        <div class="items">
+            <dir class="img-items"><img src="{% static 'factorial.jpg' %}" alt=""></dir>
+            <h4>Factorial</h4>
+        </div>
+    </a>
+    <a href="decimal_binary_conversation">
+        <div class="items">
+            <dir class="img-items"><img src="{% static 'unit-conversion.gif' %}" alt=""></dir>
+            <h4>Unit-conversion</h4>
+        </div>
+    </a>
+    <a href="rock_paper_scissor">
+        <div class="items">
+            <dir class="img-items"><img src="{% static 'rock-paper-scissor.jpg' %}" alt=""></dir>
+            <h4>Rock paper scissor</h4>
+        </div>
+    </a>
+    
+</div>
+</div>
+{% endblock content %}
