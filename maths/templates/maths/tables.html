@@ -1,0 +1,26 @@
+{% extends 'encryption/layouts/main.html' %}
+{% block title %}
+Tables
+{% endblock title %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'maths.css' %}">
+<div class="page">
+    <form action="tables_result">
+        <div class="hedding">
+                <h2>Printing Tables</h2>
+            </div>
+    <div class="inputtext">
+         enter the table no<input type="number" name="inputnumber1" class="inputnumber_tables">
+         enter no of lines<input type="number" name="inputnumber2" class="inputnumber_tables">
+    </div>
+    <div class="submitbtn">
+            <button type="submit" value="submit" class="submit-button">Submit</button>
+        </div>
+    <div class="outputtext">
+        <textarea type="textarea" class="textbox texttables" name="textbox" rows="1000" readonly>{{result}}</textarea>
+    </div>
+    </form>
+</div>
+
+{% endblock content %}

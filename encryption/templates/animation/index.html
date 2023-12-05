@@ -1,0 +1,16 @@
+{% extends 'encryption/layouts/main.html' %}
+{% block title %}
+encryption
+{% endblock title %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static "animation.css" %}">
+    <div class="page">
+        <div class="content">
+            <div class="images"> <a href="saree1"><img src="{% static "saree1.jpg" %}" alt="" height="300px" width="300px"></a> </div>
+            <div class="images"> <a href="saree2"><img src="{% static "saree2.jpg" %}" alt="" height="300px" width="300px"></a> </div>
+            <div class="images"> <a href="ramdomgeomentry"><img src="{% static 'random.jpg' %}" alt="" height="300px" width="300px"></a> </div>
+        </div>
+    </div>
+        
+        {% endblock content %}

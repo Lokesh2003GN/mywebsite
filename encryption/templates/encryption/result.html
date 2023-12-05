@@ -1,0 +1,13 @@
+{% extends 'encryption/layouts/main.html' %}
+{% block title %}
+encryption
+{% endblock title %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'encryption.css' %}">
+    <div class="page">
+       {{result}}
+    </div>
+{% endblock content %}
+
+

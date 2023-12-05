@@ -1,0 +1,53 @@
+{% extends 'encryption/layouts/main.html' %}
+{% block title %}
+Rock Paper Scissor
+{% endblock title %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'games.css' %}">
+<div class="page">
+    <form></form>
+    <div class="frame">
+        <text id="playermsg"></text>
+        <div class="frames" name="player"><img src="" alt="" id="playerimg" style="height:250px"></div>
+        <div class="frames" name="computer"><img src="" alt="" id="computerimg" style="height:250px"></div>
+    </div>
+    <div class="options">
+        <button value="rock" name="button" onclick="changeImage('{% static 'rock.png' %}')"><img src="{% static 'rockbtn.png' %}" alt="" style="height:100px"></button>
+        <button value="paper" name="button" onclick="changeImage('{% static 'paper.png' %}')"><img src="{% static 'paperbtn.png' %}" alt="" style="height:100px"></button>
+        <button value="scissor" name="button" onclick="changeImage('{% static 'scissor.png' %}')"><img src="{% static 'scissorbtn.png' %}" alt="" style="height:100px"></button>
+  
+    </div>
+    <script>
+        var options = ["{% static 'rock.png' %}", "{% static 'paper.png' %}", "{% static 'scissor.png' %}"];
+
+        
+
+        function changeImage(imagePath) {
+            inputImage(imagePath)
+            var randomIndex = getRandomIndex();
+            changeImageRandom(randomIndex)
+            if (imagePath === options[randomIndex]) { var text = document.getElementById('playermsg'); text.innerText = "It's a tie!"; } else { var text = document.getElementById('playermsg'); text.innerText = ""; }
+            
+            
+        }
+        
+        
+        function getRandomIndex() {
+            return Math.floor(Math.random() * options.length);
+        }
+        
+        function inputImage(imagePath){
+            var image = document.getElementById('playerimg');
+            image.src = imagePath;
+            
+        }
+
+        function changeImageRandom(randomIndex) {
+            
+            var image = document.getElementById('computerimg');
+            image.src = options[randomIndex];
+        }
+    </script>
+</div>
+{% endblock content %}

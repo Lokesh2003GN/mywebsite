@@ -1,0 +1,48 @@
+.page{height: 100%;
+    width: 100%;
+    background-color:#ffdd80;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+.submitbtn{
+justify-content: center;
+align-content: center;
+}
+.hedding{
+    display: flex;
+justify-content: center;
+align-content: center;
+}
+.outputtext{
+    height: 100%;
+    width: 100%;
+}
+.textbox{
+    height: auto;
+    resize: none;
+    width: 100%;
+    min-height: 100px;
+    max-height: 80vh;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: none;
+    outline: none;
+}
+.submit-button{
+background-color: #3498db;
+  color: #ffffff;
+    border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.inputnumber_number{
+    max-width: 700px;
+}
+.inputnumber_tables{
+    max-width: 50px;
+}

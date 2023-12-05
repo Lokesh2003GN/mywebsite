@@ -1,0 +1,123 @@
+.btn_black{
+        background-color:black;
+        color:white;
+        border-radius: 5px;
+        border: none;
+        }
+    .btn_brown{
+        background-color:brown;
+        color:white;
+        border-radius: 5px;
+        border: none;
+    }
+    .btn_red{
+        background-color:red;
+        color:white;
+        border-radius: 5px;
+        border: none;
+    }
+    .btn_orange{
+        background-color: orange;
+        color:white;
+        border-radius: 5px;
+        border: none;
+    }
+    .btn_yellow{
+        background-color: yellow;
+        color:black;
+        border-radius: 5px;
+        border: none;
+    }
+    .btn_green{
+        background-color:green;
+        color:white;
+        border-radius: 5px;
+        border: none;
+    }
+    .btn_blue{
+        background-color: blue;
+        color:white;
+        border-radius: 5px;
+        border: none;
+    }
+    .btn_violet{
+        background-color: violet;
+        color:white;
+        border-radius: 5px;
+        border: none;
+    }
+    .btn_gray{
+        background-color:gray;
+        color:white;
+        border-radius: 5px;
+        border: none;
+    }
+    .btn_white{
+        background-color:white;
+        color:black;
+        border-radius: 5px;
+        border: none;
+    }
+    .btn_gold{
+        background-color: gold;
+        color:white;
+        border-radius: 5px;
+        border: none;
+    }
+    .btn_silver{
+        background-color:silver;
+        color:white;
+        border-radius: 5px;
+        border: none;
+    }
+    .btn_no_color{
+        background-color: transparent;
+        color:black;
+        border-radius: 5px;
+        border: none;
+    }
+    body{
+        background-color:#d9ff95;
+    }
+    .btn_color{
+        height:40px;
+        width:80px;
+        padding:5px;
+        margin:10px;
+    }
+    .btn_row3,.btn_row1,.btn_row2,.btn_submit1{
+    text-align: center;
+    
+    }
+    .btn_submit{
+  background: linear-gradient(45deg, #FF5733, #FF33E3, #338AFF, #33FF57);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer; 
+    }
+    .btn_submit:hover {
+  background: linear-gradient(45deg, #33FF57, #338AFF, #FF33E3, #FF5733);
+}
+.input_color{
+    text-align:center;
+    
+}
+h1{
+    text-align:center;
+}
+.textbox{
+    height: auto;
+    resize: none;
+    width: 100%;
+    min-height: 100px;
+    max-height: 80vh;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: none;
+    outline: none;
+    text-align:center;
+    
+}

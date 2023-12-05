@@ -1,0 +1,92 @@
+{% extends 'encryption/layouts/main.html' %}
+{% block title %}
+Resistor color code 
+{% endblock title %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'resistor.css' %}">
+<style>
+ 
+ .resistor_color{
+ margin-left:200px;
+ display:flex;
+ }
+ .color1,.color2,.color3,.color4{
+     height:20px;
+     width:20px;
+ }
+ .color1{
+ display:flex;
+     background-color:{{color1}};
+     margin-left:-200px;
+     margin-top:28px;
+     height:47px;
+     width:20px;
+ }
+ .color2{
+     background-color:{{color2}};
+     margin-top:28px;
+     height:47px;
+     width:20px;
+ }
+ .color3{
+     background-color:{{color3}};
+     margin-top:28px;
+     height:47px;
+     width:20px;
+ }
+ .color4{
+     background-color:{{color4}};
+     margin-left:15px;
+     margin-top:28px;
+     height:47px;
+     width:20px;
+ }
+</style>
+<body>
+    <h1>Resistor</h1>
+    <form action="resistor_result">
+        <div class="resistor_color">
+            <img src="{% static 'resistor.png' %}" style="height:100px; width:300px;margin-left:140px">
+            <div class="color1"></div>
+            <div class="color2"></div>
+            <div class="color3"></div>
+            <div class="color4"></div>
+            
+        </div>
+        <textarea type="textarea" class="textbox texttables" name="textbox" rows="4" readonly>{{result1}}
+{{result2}}
+{{result3}}</textarea>
+       <div class="input_color">
+           <input id="color-code" type="text" name="inputcode" readonly value="{{input}}">
+       </div>
+            
+    <div class="btn_row1">
+        <input class="btn_black btn_color" type="button" value="black" onclick="inputcode.value += 'black '">
+    <input class="btn_brown btn_color" type="button" value="brown" onclick="inputcode.value += 'brown '">
+    <input class="btn_red btn_color" type="button" value="red" onclick="inputcode.value += 'red '">
+    <input class="btn_orange btn_color" type="button" value="orange" onclick="inputcode.value += 'orange '">
+    <input class="btn_yellow btn_color" type="button" value="yellow" onclick="inputcode.value += 'yellow '">
+    <input class="btn_green btn_color" type="button" value="green" onclick="inputcode.value += 'green '">
+    </div>
+    <div class="btn_row2">
+        <input class="btn_blue btn_color" type="button" value="blue" onclick="inputcode.value += 'blue '">
+    <input class="btn_violet btn_color" type="button" value="violet" onclick="inputcode.value += 'violet '">
+    <input class="btn_gray btn_color" type="button" value="gray" onclick="inputcode.value += 'gray '">
+    <input class="btn_white btn_color" type="button" value="white" onclick="inputcode.value += 'white '">
+    <input class="btn_gold btn_color" type="button" value="gold" onclick="inputcode.value += 'gold '">
+    <input class="btn_silver btn_color" type="button" value="silver" onclick="inputcode.value += 'silver '">
+    
+    </div>
+    <div class="btn_row3">
+        <input class="btn_no_color btn_color" type="button" value="no_color" onclick="inputcode.value += 'no_color '">
+        <input class="btn_clearall btn_color" type="button" value="clearall" onclick="inputcode.value = ''">
+    </div>
+    <div class="btn_submit1">
+        <button type="btn_submit" class="btn_submit">Submit</button>
+    </div>
+    
+
+</form>
+</body>
+{% endblock content %}

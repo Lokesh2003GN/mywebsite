@@ -1,0 +1,32 @@
+{% extends 'encryption/layouts/main.html' %}
+{% block title %}
+encryption
+{% endblock title %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'encryption.css' %}">
+    <div class="page">
+        
+        <form action="result">
+            <div class="hedding">
+                <h2>Text Encryption and Decryption</h2>
+            </div>
+        <div class="gotobtn">
+            <input type="radio" name="goto" value="1" checked>Encrypt
+            <input type="radio" name="goto" value="2">Decrypt
+            
+        </div>
+        <div class="ecode">
+            Encrypting or decrypting code <input type="number" name="code">
+        </div>
+        <div class="inputtext">
+            <textarea type="textarea" class="textbox" name="textbox">{{result}}</textarea>
+        </div>
+        <div class="submitbtn">
+            <button type="submit" value="submit" class="submit-button">Submit</button>
+        </div>
+        
+        </form>
+        
+    </div>
+{% endblock content %}

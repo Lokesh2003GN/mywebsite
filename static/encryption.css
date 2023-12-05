@@ -1,0 +1,56 @@
+.page{height: 100%;
+    grid: auto;
+    width: 100%;
+    background-color: #d5fff4;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+.images{
+    height:100px;
+    width:100px;
+}
+
+.hedding{
+    display: flex;
+justify-content: center;
+align-content: center;
+}
+.gotobtn{display: flex;
+justify-content: center;
+align-content: center;
+}
+.inputbox{height: 100%;
+display: flex;
+justify-content: center;
+align-content: center;
+}
+.inputtext{
+    width:100%;
+}
+textarea{
+width: 600px;
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    font-family: Arial, sans-serif; 
+    font-size: 20px; 
+    resize: horizontal;
+    overflow: hidden;
+    height: 300px;
+}
+.submitbtn{
+    display: flex;
+justify-content: center;
+align-content: center;
+}
+.submit-button{
+    background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}

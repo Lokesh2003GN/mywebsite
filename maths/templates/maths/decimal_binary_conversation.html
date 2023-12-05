@@ -1,0 +1,32 @@
+{% extends 'encryption/layouts/main.html' %}
+{% block title %}
+maths-decimal_binary_conversation
+{% endblock title %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'maths.css' %}">
+    <div class="page">
+        
+        <form action="decimal_binary_conversation_result">
+            <div class="hedding">
+                <h2>decimal binary conversation</h2>
+            </div>
+        <div class="gotobtn">
+            <input type="radio" name="goto" value="1" checked>Decimal-Binary
+            <input type="radio" name="goto" value="2">Binary-Decimal
+            
+        </div>
+        <div class="ecode">
+            Enter number to convert<input type="number" name="inputnumber">
+        </div>
+        <div class="inputtext">
+            <textarea type="textarea" class="textbox" name="textbox" readonly>{{result}}</textarea>
+        </div>
+        <div class="submitbtn">
+            <button type="submit" value="submit" class="submit-button">Submit</button>
+        </div>
+        
+        </form>
+        
+    </div>
+{% endblock content %}

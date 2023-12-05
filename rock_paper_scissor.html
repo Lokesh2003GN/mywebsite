@@ -1,0 +1,23 @@
+{% extends 'encryption/layouts/main.html' %}
+{% block title %}
+Rock Paper Scissor
+{% endblock title %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'games.css' %}">
+<link rel="stylesheet" href="games.css">
+<div class="page">
+    <form action="rock_paper_scissor_result">
+    <div class="frame">
+        <div class="frames" name="player"><img src="{{result.player}}" alt="" style=height:250px ></div>
+        <div class="frames" name="computer" style=height:250px ><img src="{{result.computer}}" alt=""></div>
+    </div>
+    <div class="options">
+        <button type="submit" value="1" name="button"><img src="rockbtn.png" alt="" style=height:100px></button>
+        <button type="submit" value="2" name="button"><img src="paperbtn.png" alt="" style=height:100px></button>
+        <button type="submit" value="3" name="button"><img src="scissorbtn.png" alt="" style=height:100px></button>
+        </div>
+        </form>
+    </div>
+
+{% endblock content %}
